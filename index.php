@@ -30,7 +30,8 @@
         <!-- Rut -->
         <div class="form-group">
           <b>Rut</b>
-          <input type="text" class="form-control" name="rut" placeholder="Ingrese su Rut">
+          <input type="text" class="form-control" name="rut" size="8" placeholder="Ingrese su Rut">
+          <p align="left">Ejemplo: 18931144</p>
         </div>
         <!-- Email -->
         <div class="form-group">
@@ -77,6 +78,10 @@
         <div class="form-group">
           <b>Términos y condiciones</b><br />
           <input type="checkbox" name="terminos" value="1"> Acepto y he leído los términos y condiciones.<br />
+        </div>
+        <div class="form-group">
+          <b>Acepto Las condiciones</b><br />
+          <input type="checkbox" name="condiciones" value="1"> Deseo recibir correos basura de esta empresa<br />
         </div>
         <div class="form-group">
           <input type="checkbox" name="contenido" value="1"> <b>¿Ver la estructura del contenido que se envió?</b>
