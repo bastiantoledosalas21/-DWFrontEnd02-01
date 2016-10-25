@@ -21,6 +21,7 @@ $contenido = isset($_POST['contenido']) ? (int) $_POST['contenido'] : 0;
 $anio = isset($_POST['anio']) ? (int) $_POST['anio'] : 0;
 $terminos = isset($_POST['terminos']) ? (int) $_POST['terminos'] : 0;
 $nombre = isset($_POST['nombre']) ? Filtro($_POST['nombre']) : '';
+$rut = isset($_POST['rut']) ? Filtro($_POST['rut']): '';
 $correo = isset($_POST['correo']) ? Filtro($_POST['correo']) : '';
 $contrasena = isset($_POST['contrasena']) ? Filtro($_POST['contrasena']) : '';
 $foto = isset($_FILES['foto']) ? $_FILES['foto'] : '';
@@ -52,6 +53,9 @@ if($enviado == 1 && $contenido == 1) {
   exit;
 } else if(empty($nombre)) {
   $error = 'Por favor, ingrese su nombre.';
+}
+  else if (empty($Rut)) {
+  $error = 'Por favor, ingrese su rut.';
 } else if(empty($correo)) {
   $error = 'Por favor, ingrese su correo electrónico.';
 } else if(empty($contrasena)) {
@@ -94,7 +98,7 @@ if(!empty($error)) {
       <p>Bienvenido(a) <b><?php echo $nombre; ?></b>,</p>
       <p>Tu correo electrónico es <b><?php echo $correo; ?></b>, y tu contraseña tiene <b><?php echo strlen($contrasena); ?></b> caracteres.</p>
       <p>
-        Tu foto de perfil es: <br />
+        <br>Tu foto de perfil es: <br />
         <img src="./assets/<?php echo $nombre_foto; ?>" class="thumbnail">
       </p>
       <p>

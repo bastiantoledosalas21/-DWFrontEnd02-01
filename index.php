@@ -27,6 +27,11 @@
           <b>Nombre</b>
           <input type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre">
         </div>
+        <!-- Rut -->
+        <div class="form-group">
+          <b>Rut</b>
+          <input type="text" class="form-control" name="rut" placeholder="Ingrese su Rut">
+        </div>
         <!-- Email -->
         <div class="form-group">
           <b>Correo electrónico</b>
@@ -52,6 +57,7 @@
           <b>Año de ingreso</b><br />
           <select name="anio" class="form-control">
             <option value="">Seleccione un año</option>
+            <option value="1980">1980</option>
             <option value="2009">2009</option>
             <option value="2010">2010</option>
             <option value="2011">2011</option>
@@ -65,6 +71,7 @@
           <b>Sexo</b><br />
           <input type="radio" name="sexo" value="m"> Masculino<br />
           <input type="radio" name="sexo" value="f"> Femenino<br />
+          <input type="radio" name="sexo" value="Nr"> No Responde<br />
         </div>
         <!-- Checkbox -->
         <div class="form-group">
